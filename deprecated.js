@@ -24,7 +24,7 @@ export default (fileInfo, api) => {
         name: localName,
       },
       property: {
-        name: 'getCircleArea',
+        name: 'circleArea',
       },
     })
 
@@ -32,7 +32,7 @@ export default (fileInfo, api) => {
       // get the underlying Node
       const { node } = nodePath;
       // change to our new prop
-      node.property.name = 'circleArea';
+      node.property.name = 'getCircleArea';
       // replaceWith should return a Node, not a NodePath
       return node;
     })
